@@ -1,0 +1,273 @@
+{
+  "repository": "prof-faustus/CBDC",
+  "branch": "research/treasury-test-foundation",
+  "commit": "2e4ffea0a99978ee751466b6a252ba951fe352e4",
+  "observed_at": "2026-10-07T08:38:17Z",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "match": true,
+      "expected_sha256": "1c4201623ae79d18419940cd2812dfe14fbfdee9f57c0935bab137d2fe8d3f23",
+      "size": 1567,
+      "remote_blob_sha": "57f8fd38619902d893cc3e0dc5f4721cea223e1e",
+      "error": null
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "match": true,
+      "expected_sha256": "137d742989f43c9ae11baf3c7a298e090611a9fd9e496c1fd581ad8ad81de46e",
+      "size": 912,
+      "remote_blob_sha": "3abd475142fdc2acd3df7ea81df03bf9cc0b2b37",
+      "error": null
+    },
+    {
+      "path": ".gitignore",
+      "match": true,
+      "expected_sha256": "1bcbba119a7f4f629944ca435fbc9584bbee8f66b2c8c00cd317cce68854d810",
+      "size": 90,
+      "remote_blob_sha": "375f2c6758aa1f63de6b7a0908ec096a86a193dc",
+      "error": null
+    },
+    {
+      "path": "README.md",
+      "match": true,
+      "expected_sha256": "90812c139f70620808f6cdad76fbfa07edf4aa173667076f8bfbe732a0b8b028",
+      "size": 4671,
+      "remote_blob_sha": "e5ebcc1d5d0819faf40bd4844ccd192fd14d5960",
+      "error": null
+    },
+    {
+      "path": "cbdc_lab/__init__.py",
+      "match": true,
+      "expected_sha256": "dfe0f5bf94d54da46060cdb49353fec079c990aed25b124df810a7bfaa64c813",
+      "size": 219,
+      "remote_blob_sha": "5833091d56747eb20b88208dfca33d0b62f6a07b",
+      "error": null
+    },
+    {
+      "path": "cbdc_lab/demo.py",
+      "match": true,
+      "expected_sha256": "3383d295c16c0679f032d8c519f7e657e48ba31cca5e2b3e80b9c8aa20839694",
+      "size": 2570,
+      "remote_blob_sha": "8f615dc844cb83ff2dacd5e3765278e499353c65",
+      "error": null
+    },
+    {
+      "path": "cbdc_lab/anchor.py",
+      "match": true,
+      "expected_sha256": "9043794961ae79ab2e7ecf210fc8302c3496388320f2aaa37231cef6104f215a",
+      "size": 3947,
+      "remote_blob_sha": "a831792d3b0842372e92b6302cc0c44466433620",
+      "error": null
+    },
+    {
+      "path": "docs/architecture/threat-model.md",
+      "match": true,
+      "expected_sha256": "608f7407ca465c28dd7d63f50631615353981e30984176490e585da051a4ceb7",
+      "size": 4730,
+      "remote_blob_sha": "2166cd7835ce1a0f9d62a7db8874f57289efe9b2",
+      "error": null
+    },
+    {
+      "path": "cbdc_lab/ledger.py",
+      "match": true,
+      "expected_sha256": "cc2203857f67798e70739a76555ede1e3a2f9623a0b22921445d0b77d738682c",
+      "size": 23771,
+      "remote_blob_sha": "38d1bae7e0c7758060cc9dfe665a89b49ef5785f",
+      "error": null
+    },
+    {
+      "path": "docs/architecture/decisions.md",
+      "match": true,
+      "expected_sha256": "bae77e75d854240abac33ca8b39519b889f4ae3dbc9c3661502f24c04c02053e",
+      "size": 7140,
+      "remote_blob_sha": "5ae856e72d3f0f113629d5c9faa5a938184f6161",
+      "error": null
+    },
+    {
+      "path": "docs/implementation-plan.md",
+      "match": true,
+      "expected_sha256": "eea655445f25350b8285f8322afeda59147b48e7d14ad005840cc7adfd352e45",
+      "size": 6772,
+      "remote_blob_sha": "5842bef8f7da4481fd3b48d85f86d471ffb69c3f",
+      "error": null
+    },
+    {
+      "path": "docs/operations/lab-runbook.md",
+      "match": true,
+      "expected_sha256": "aa674ed2ca50dc4493942146eab7913b44909d5b709e94824f11ef0c5feb4f6a",
+      "size": 3077,
+      "remote_blob_sha": "815d3629893df19a22d659bdf6a5d9a14806ba24",
+      "error": null
+    },
+    {
+      "path": "docs/architecture/treasury-and-denominations.md",
+      "match": true,
+      "expected_sha256": "e30aa2d4f628297d9a31771c9d4e2de515df6ea72ea9b528cd9682229cc82d56",
+      "size": 4878,
+      "remote_blob_sha": "5836bdf38a03d47d488064690339596611240852",
+      "error": null
+    },
+    {
+      "path": "docs/research/README.md",
+      "match": true,
+      "expected_sha256": "51fa3721c2ad3651aafdfa8834ed4b61a7b770c55557258957145a715dc97876",
+      "size": 2779,
+      "remote_blob_sha": "5ea896c8e3973589bd09bbf88c7b088deba857cf",
+      "error": null
+    },
+    {
+      "path": "docs/research/bsv-evidence.json",
+      "match": true,
+      "expected_sha256": "5eb8cee8c8a38c3f46fd1936feb1df421c3e55969ee1bb8881888f0224ec78fb",
+      "size": 10571,
+      "remote_blob_sha": "8a4b8da2f3b8802ff1e957fc246a88f25cea79ef",
+      "error": null
+    },
+    {
+      "path": "docs/research/central-bank/evidence.json",
+      "match": true,
+      "expected_sha256": "930acb2d12ee7c5650d2ba1eee6a218645b2a01d249dbf9507e43f60ddd0d96f",
+      "size": 22306,
+      "remote_blob_sha": "be56e18826acf90fa70706480c0754fedb01975e",
+      "error": null
+    },
+    {
+      "path": "docs/research/central-bank/central-bank-architecture.md",
+      "match": true,
+      "expected_sha256": "6b4b763671d45017cf6f706cc13d56216185f92c69e269b74500256388f5f38b",
+      "size": 19198,
+      "remote_blob_sha": "0264ba3d3a263f5f54f4749ca2f64e743f5fa4f6",
+      "error": null
+    },
+    {
+      "path": "docs/research/central-bank/README.md",
+      "match": true,
+      "expected_sha256": "85f109a5dbeb07324802d661e91969f023424462a6a1d5590a833f79b52177ef",
+      "size": 3184,
+      "remote_blob_sha": "f3e6058d3d76b33f588a10fec250c69b45918eae",
+      "error": null
+    },
+    {
+      "path": "docs/research/central-bank/operational-control-baseline.md",
+      "match": true,
+      "expected_sha256": "799e16dc2378e79e9659a33596b3f2818337c806b84a87e2385e4e719eed27aa",
+      "size": 14452,
+      "remote_blob_sha": "788a6fe355255c07a9e1183d38e61565f078f885",
+      "error": null
+    },
+    {
+      "path": "docs/research/bsv-integration.md",
+      "match": true,
+      "expected_sha256": "286564d00477e863cba6bb2f30193f036b32edbeb16e25687374d52a50a68567",
+      "size": 6860,
+      "remote_blob_sha": "4320f4d5a741084655b238d64f82df2f12153fb1",
+      "error": null
+    },
+    {
+      "path": "docs/testing/demo-and-testnet-observation.json",
+      "match": true,
+      "expected_sha256": "6677218001142f7dd11b7af7cc9b4c1a33243a306afff348b9be3987db77d60c",
+      "size": 1556,
+      "remote_blob_sha": "f6c938ae8abc5cd07a677bf9e00c03bb83659f74",
+      "error": null
+    },
+    {
+      "path": "docs/research/central-bank/sources.md",
+      "match": true,
+      "expected_sha256": "a13a9632fd73ce144369b884eccfc5276c49169f2ab7265dc4ce1d98afb33b45",
+      "size": 10618,
+      "remote_blob_sha": "0689419f30f0622c31553d94761945e04627e79b",
+      "error": null
+    },
+    {
+      "path": "docs/testing/performance-plan.md",
+      "match": true,
+      "expected_sha256": "9643f944abbbc357cdb74e161c520fce0039748f741a5099dda359236ef31dbc",
+      "size": 4664,
+      "remote_blob_sha": "39f2f6874c727572b0be5493f4526e7ca6ba7414",
+      "error": null
+    },
+    {
+      "path": "docs/testing/test-results.txt",
+      "match": true,
+      "expected_sha256": "a4fa76435f92af3179fb16b8c6fcedd00d8ab5ee82bc1705a8443b7232e65c2b",
+      "size": 6615,
+      "remote_blob_sha": "6a57cb4e40e7d9a028c6aac0ac1e6595d9263b10",
+      "error": null
+    },
+    {
+      "path": "docs/testing/environment.json",
+      "match": true,
+      "expected_sha256": "72fab65ea8f63a070705a13fa3f240f14465e567d4abd145e98862261b22d3b0",
+      "size": 344,
+      "remote_blob_sha": "d383ba6122e953a4357bab3c29478deb806d2ea0",
+      "error": null
+    },
+    {
+      "path": "tests/test_anchor.py",
+      "match": true,
+      "expected_sha256": "2ca2be8b0f822d8248611348d574d348193570ab0ebe01a0731174c0e9a372dd",
+      "size": 2650,
+      "remote_blob_sha": "ed8373ea8a4e2af1bfbffca32aff68f578d9d1c8",
+      "error": null
+    },
+    {
+      "path": "scripts/check_research.py",
+      "match": true,
+      "expected_sha256": "a1f7e45e4fb2ac8c1266d873b7118ab4e1838a98fbcdea01711b228955be4259",
+      "size": 1485,
+      "remote_blob_sha": "55ad73ed4bf17ac6f059535e235e4be57ea49627",
+      "error": null
+    },
+    {
+      "path": "docs/testing/verification.md",
+      "match": true,
+      "expected_sha256": "ec82e7dde338d4e0ba3aeef0a3d7c8245d3573ddef01767386305a00cebf9461",
+      "size": 3599,
+      "remote_blob_sha": "562d1132c889697b5110d723f18d791d006118db",
+      "error": null
+    },
+    {
+      "path": "tests/__init__.py",
+      "match": true,
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "remote_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "error": null
+    },
+    {
+      "path": "tests/test_ledger.py",
+      "match": true,
+      "expected_sha256": "78141f8a105eda89001bd16f414c72de4a6730226db524637312c46feb710228",
+      "size": 12531,
+      "remote_blob_sha": "4e6ea45827284c7097645186e257cc0a9f9717ec",
+      "error": null
+    },
+    {
+      "path": "tests/test_review_regressions.py",
+      "match": true,
+      "expected_sha256": "beb90bf2dfbaa4c78ac7798c886ef7637749e03c8b3fd534847d00daf8a9aa34",
+      "size": 11979,
+      "remote_blob_sha": "4cadfcdb3cac7eddda07e2041ccf2237c37bec8f",
+      "error": null
+    }
+  ],
+  "all_files_equal": true,
+  "ci": [
+    {
+      "name": "reference-model (3.13)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/prof-faustus/CBDC/actions/runs/37594997740/job/112705350739"
+    },
+    {
+      "name": "reference-model (3.12)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/prof-faustus/CBDC/actions/runs/37594997740/job/112705350245"
+    }
+  ],
+  "ci_url": "https://github.com/prof-faustus/CBDC/actions/runs/37594997740",
+  "pull_request_created": false
+}

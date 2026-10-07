@@ -10,7 +10,7 @@ Acceptance: source claims have provenance and limits; exact-value conservation a
 
 ## Stage 1: BSV representation proof and offline transaction tests
 
-**Open.** Compare the three representation patterns in the BSV research. Select a test protocol only after defining authoritative monetary state and the role of issuer, holder, miners and overlays. Pin the reviewed SDK/package and encode reference vectors shared across languages.
+**Source comparison completed; protocol selection and runtime proof remain open.** The [candidate comparison](research/token-enforcement/candidate-comparison.md) inspects 28 pinned primary source files/specifications. It shortlists regulated Mandala and an explicitly designed issuer-and-holder co-signature protocol against the issuer-ledger/anchor baseline. Plain BTMS does not meet the unchanged treasury contract. Select a test protocol only after defining authoritative monetary state and the role of issuer, holder, miners and overlays. Pin the reviewed SDK/package and encode reference vectors shared across languages.
 
 Deliverables: currency descriptor and issuer identity specification; canonical signed instruction envelope; script/protocol specification; exact principal/carrier/fee types; independently reviewed mint/split/merge/retire validity rules; offline serialization and signature tests; negative corpus; size and fee estimates for 2,000 outputs.
 

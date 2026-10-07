@@ -1,6 +1,6 @@
 # Research index and provenance
 
-Snapshot date: **7 October 2026**. The evidence set contains 28 primary sources or direct service observations: 15 central-bank/security/legal references and 13 BSV/source/network references. Original engineering proposals are labelled separately from source facts.
+Snapshot date: **7 October 2026**. The evidence set contains 56 primary-source entries or direct service observations: 15 central-bank/security/legal references, 13 BSV/source/network references and 28 token-enforcement source files/specifications. Original engineering proposals are labelled separately from source facts.
 
 ## Read in this order
 
@@ -8,8 +8,9 @@ Snapshot date: **7 October 2026**. The evidence set contains 28 primary sources 
 2. [Operational control baseline](central-bank/operational-control-baseline.md)
 3. [Central-bank source summaries](central-bank/sources.md) and [machine-readable evidence](central-bank/evidence.json)
 4. [BSV implementation and network findings](bsv-integration.md) and [machine-readable evidence](bsv-evidence.json)
-5. [Project decisions](../architecture/decisions.md), [treasury contracts](../architecture/treasury-and-denominations.md) and [threat model](../architecture/threat-model.md)
-6. [Implementation roadmap](../implementation-plan.md) and [performance acceptance plan](../testing/performance-plan.md)
+5. [BSV token-enforcement comparison](token-enforcement/candidate-comparison.md), [qualification obligations](token-enforcement/review-hotspots.md) and [pinned evidence](token-enforcement/token-enforcement-evidence.json)
+6. [Project decisions](../architecture/decisions.md), [treasury contracts](../architecture/treasury-and-denominations.md) and [threat model](../architecture/threat-model.md)
+7. [Implementation roadmap](../implementation-plan.md) and [performance acceptance plan](../testing/performance-plan.md)
 
 ## Evidence rules
 

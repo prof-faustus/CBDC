@@ -52,6 +52,6 @@ test_transfer_audit_failure_rolls_back_all_changes (tests.test_review_regression
 test_verify_uses_one_snapshot_during_concurrent_write (tests.test_review_regressions.ReviewRegressionTests.test_verify_uses_one_snapshot_during_concurrent_write) ... ok
 
 ----------------------------------------------------------------------
-Ran 52 tests in 0.311s
+Ran 52 tests in 0.359s
 
 OK

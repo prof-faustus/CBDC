@@ -9,7 +9,7 @@ from urllib.parse import unquote, urlparse
 ROOT = Path(__file__).resolve().parents[1]
 ids = set()
 count = 0
-for path in (ROOT / "docs/research/central-bank/evidence.json", ROOT / "docs/research/bsv-evidence.json"):
+for path in (ROOT / "docs/research/central-bank/evidence.json", ROOT / "docs/research/bsv-evidence.json", ROOT / "docs/research/token-enforcement/token-enforcement-evidence.json"):
     body = json.loads(path.read_text())
     assert body["schema_version"] == "1.0", path
     assert body["retrieved"] == "2026-10-07", path
@@ -35,5 +35,5 @@ for path in ROOT.rglob("*.md"):
         assert target.exists(), (path, link)
         links_checked += 1
 
-assert count >= 28, count
+assert count >= 56, count
 print(f"Validated {count} unique source entries and {links_checked} local links.")

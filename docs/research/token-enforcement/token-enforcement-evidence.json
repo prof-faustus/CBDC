@@ -1,0 +1,510 @@
+{
+  "schema_version": "1.0",
+  "scope": "Stage 1 public-source enforcement comparison; no installation, keys, signing or broadcast",
+  "retrieved": "2026-10-07",
+  "sources": [
+    {
+      "id": "TEN-001",
+      "title": "BRC-48 Pay to Push Drop",
+      "publisher": "bsv-blockchain/BRCs contributors (authors named in specification)",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/BRCs/blob/ed1b015bac53106ff34e5d1831acda378cbe5c04/scripts/0048.md",
+      "version": {
+        "commit": "ed1b015bac53106ff34e5d1831acda378cbe5c04",
+        "blob_sha": "6bb25e33c74bacd294b711ee594fd54bbf970027"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Defines dropped data plus owner signature locking.",
+        "Explicitly leaves higher-order token rules to overlays."
+      ],
+      "limits": "Specification is not a monetary conservation covenant."
+    },
+    {
+      "id": "TEN-002",
+      "title": "SDK PushDrop implementation",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/sdk/src/script/templates/PushDrop.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "d24708f3e02439dc44c19291fa20851775154a0f"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Default lock order is owner P2PK first then dropped data; alternate after position is supported.",
+        "Unlock defaults to signing all outputs with anyoneCanPay false."
+      ],
+      "limits": "No amount conservation or issuer allowlist is enforced by this script template."
+    },
+    {
+      "id": "TEN-003",
+      "title": "Canonical BTMS topic manager",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/btms/BTMSTopicManager.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "353e565751d1a678ee5fe0fbbf6b22ea4cbb7d96"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Admits ISSUE as fresh txid.vout; transfer allowances come from previousCoins.",
+        "Admits individual output prefixes within allowance and exact metadata comparison.",
+        "No separate issuer-only retirement rule."
+      ],
+      "limits": "Topic admission, not consensus; the function alone does not validate complete lineage."
+    },
+    {
+      "id": "TEN-004",
+      "title": "BTMS topic-manager test source",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/btms/__tests/BTMSTopicManager.test.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "87ea4803c7cd57065dc00db7a2801928a9ad83c0"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Contains explicit partial-prefix over-output admission and full/partial burn tests."
+      ],
+      "limits": "Tests were read, not run."
+    },
+    {
+      "id": "TEN-005",
+      "title": "BTMS token encoder/decoder",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/wallet/btms/src/BTMSToken.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "52cf28b51e0c4b6c50434b1e60f0b8b6a5bee069"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Canonical positive safe-integer amounts; PushDrop output and holder unlocker.",
+        "Client metadata recognition differs from topic-manager heuristic."
+      ],
+      "limits": "Requires differential parser testing; no runtime audit was performed."
+    },
+    {
+      "id": "TEN-006",
+      "title": "BTMS constants",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/wallet/btms/src/constants.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "6bdc24b9cf0f4880ec95b811972a7d693d50a15b"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Default output carrier is one satoshi; amounts range from 1 to Number.MAX_SAFE_INTEGER."
+      ],
+      "limits": "Native satoshis are independent of token units."
+    },
+    {
+      "id": "TEN-007",
+      "title": "BTMS manifest",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/wallet/btms/package.json",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "55a76e8cccf94f1240d2392ecbbe599dbaddc094"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Source manifest reports @bsv/btms 1.2.4."
+      ],
+      "limits": "Not package-registry release verification."
+    },
+    {
+      "id": "TEN-008",
+      "title": "BTMS wallet permission module",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/wallet/btms-permission-module/README.md",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "b6434c7051d78122e186cb59007d64fe1c25d67b"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Describes trusted prompts and transaction-digest binding.",
+        "Auto-approves qualifying pure issuance wallet actions."
+      ],
+      "limits": "Wallet authorization is not statutory issuer policy or miner validation; implementation was not audited."
+    },
+    {
+      "id": "TEN-009",
+      "title": "BRC-161 BSV-21 legacy JSON",
+      "publisher": "bsv-blockchain/BRCs contributors (authors named in specification)",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/BRCs/blob/ed1b015bac53106ff34e5d1831acda378cbe5c04/tokens/0161.md",
+      "version": {
+        "commit": "ed1b015bac53106ff34e5d1831acda378cbe5c04",
+        "blob_sha": "c3f24f1f7bde9be2163419d255887cbb03cbc228"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Defines fixed-supply and authority models with indexer-enforced token rules.",
+        "Recommends new fungible issuance under BRC-162."
+      ],
+      "limits": "Generic token model is not CBDC policy."
+    },
+    {
+      "id": "TEN-010",
+      "title": "BRC-162 Mandala",
+      "publisher": "bsv-blockchain/BRCs contributors (authors named in specification)",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/BRCs/blob/ed1b015bac53106ff34e5d1831acda378cbe5c04/tokens/0162.md",
+      "version": {
+        "commit": "ed1b015bac53106ff34e5d1831acda378cbe5c04",
+        "blob_sha": "b31f630ed258eaf2d5faa15bd0acd687076a12ae"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Indexer-enforced per-token conservation or mint from authority; authority can split/transfer/end.",
+        "Base amounts up to 2^64-1; implicit burn permitted; payload is not admission policy.",
+        "Its Implementations section says None yet."
+      ],
+      "limits": "That status conflicts with relevant current ts-stack source; no claim all implementations match this version."
+    },
+    {
+      "id": "TEN-011",
+      "title": "BRC-176 token validity proofs",
+      "publisher": "bsv-blockchain/BRCs contributors (authors named in specification)",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/BRCs/blob/ed1b015bac53106ff34e5d1831acda378cbe5c04/tokens/0176.md",
+      "version": {
+        "commit": "ed1b015bac53106ff34e5d1831acda378cbe5c04",
+        "blob_sha": "2e9801271e5b008665cab96684b3587341f18e72"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Requires recursively sufficient token-parent transaction bodies for scoped DAG proof.",
+        "Excludes unspent membership and global circulating supply."
+      ],
+      "limits": "Base token proof does not prove stricter regulated-overlay policy or current freeze/eviction state."
+    },
+    {
+      "id": "TEN-012",
+      "title": "Regulated Mandala topic manager",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/MandalaTopicManager.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "e8470c917b08c300cde1e776e3fcd5d3b05d742b"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Combines generic ledger, ownership, trusted authority and issuer controls.",
+        "Requires nonempty canonical trustedIssuers and journals owners before admittance."
+      ],
+      "limits": "Static source only; no production acceptance, legal assurance or deployment qualification."
+    },
+    {
+      "id": "TEN-013",
+      "title": "Regulated Mandala implemented contract",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/MandalaTopicDocs.md.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "e7114f7eade4d0384b3a0586a38c1417cec29fa7"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "P2PKH one-satoshi authority/value outputs; off-chain owner-linkage/admin envelope.",
+        "Exact holder conservation, issue/redeem/reissue deltas and control rejects.",
+        "Caps the regulated profile at 2^53-1."
+      ],
+      "limits": "Implementation profile is stricter than base BRC-162 and relies on configuration and external state."
+    },
+    {
+      "id": "TEN-014",
+      "title": "Regulated authority enforcement",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/authority.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "b24cd21a75a3540427703b5acef27e8680f79e21"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Trusted authority input/output owners; authority continuity and at most one action commitment.",
+        "Holder delta zero; issue positive; redeem negative; reissue matches frozen amount and recipient.",
+        "Reads indexed supply for positive-delta cap checks."
+      ],
+      "limits": "No independent treasury officer quorum or treasury-only redeem condition identified in these checks; concurrency qualification is pending."
+    },
+    {
+      "id": "TEN-015",
+      "title": "Regulated controls enforcement",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/controls.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "e2b45b9468d9be6c259ddfbc29592dd7b8f56869"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Rejects frozen/evicted inputs; pause/access controls; screening and membership.",
+        "Authority transactions bypass pause/access only after frozen/evicted checks; sanctions apply to all identities."
+      ],
+      "limits": "Enforced by overlay admission, not the P2PKH consensus script."
+    },
+    {
+      "id": "TEN-016",
+      "title": "Regulated admin state reducer",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/AssetStateReducer.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "52f062319bca3fc72cada0d5346c018db372cdb4"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Reissue removes frozen reference and adds evicted outpoint.",
+        "Fee rate is stored as control state."
+      ],
+      "limits": "State fold does not spend the old UTXO or prove fee payment."
+    },
+    {
+      "id": "TEN-017",
+      "title": "Regulated supply/index storage",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/MandalaStorageManager.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "30f8a6a0b1d74d78e995b6dc52112d8548c1cc01"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "circulatingSupply excludes evicted outpoints that remain on chain.",
+        "Uses bigint for the sum; row-repair semantics distinguish indexes from owner journal."
+      ],
+      "limits": "Global liability reconciliation and concurrent admission atomicity are not established by reading this file."
+    },
+    {
+      "id": "TEN-018",
+      "title": "Regulated lookup and reorg primitives",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/MandalaLookupService.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "d74968af8674511fc556059a6fb8d18278c88bf3"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Includes live freeze context, admin history, purge/refold and input-row restoration.",
+        "Restoration requires the caller to verify the input is again unspent and admitted."
+      ],
+      "limits": "Not evidence that all deployment paths invoke these primitives correctly."
+    },
+    {
+      "id": "TEN-019",
+      "title": "Regulated owner linkage",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/ownership.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "d711b4d3366cb627917df1ff9872254a2982714b"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Checks exact P2PKH shape, one satoshi, safe-integer cap and verified owner linkage.",
+        "Owner-index repair depends on owner journal and admitted engine output."
+      ],
+      "limits": "Cryptographic key control does not itself prove lawful holder identity."
+    },
+    {
+      "id": "TEN-020",
+      "title": "Generic BRC-162 ledger implementation",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/brc162/ledger.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "d0bbdd332081943bc5008839738644e012da7226"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Classifies already-admitted predecessor inputs; builds per-token bigint ledgers.",
+        "Base authority/conservation verdicts are separated from regulated checks."
+      ],
+      "limits": "Calling the ledger alone does not confer trusted previousCoins or issuer policy."
+    },
+    {
+      "id": "TEN-021",
+      "title": "Overlay engine submission path",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/overlay/src/Engine.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "49bc484d8361036db63248207a2c870d5679efa7"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "SPV-verifies normal submissions; obtains previousCoins from unspent topical state.",
+        "Any accepted topic can enable broadcast; all-topic rejection suppresses engine broadcast.",
+        "Mutation and external broadcast have separate phases."
+      ],
+      "limits": "External broadcaster bypass remains possible; historical no-SPV route requires independent trust. No end-to-end recovery test executed."
+    },
+    {
+      "id": "TEN-022",
+      "title": "BRC-22 overlay synchronization",
+      "publisher": "bsv-blockchain/BRCs contributors (authors named in specification)",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/BRCs/blob/ed1b015bac53106ff34e5d1831acda378cbe5c04/overlays/0022.md",
+      "version": {
+        "commit": "ed1b015bac53106ff34e5d1831acda378cbe5c04",
+        "blob_sha": "ec369063b56903230c5d630fa7bd66f07d21f670"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Servers choose topic-specific rules and return admitted outputs and retained history.",
+        "Validation pipeline is implementation-defined."
+      ],
+      "limits": "A topic name or acknowledgment alone is not uniform policy, finality or global supply proof."
+    },
+    {
+      "id": "TEN-023",
+      "title": "BRC-21 Push TX",
+      "publisher": "bsv-blockchain/BRCs contributors (authors named in specification)",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/BRCs/blob/ed1b015bac53106ff34e5d1831acda378cbe5c04/scripts/0021.md",
+      "version": {
+        "commit": "ed1b015bac53106ff34e5d1831acda378cbe5c04",
+        "blob_sha": "ba939b0d65b1ff4da1da18ae118194ce1252a3c3"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Describes binding pushed transaction preimage through CHECKSIG to enable script-enforced transaction conditions."
+      ],
+      "limits": "A technique, not an implemented fungible CBDC."
+    },
+    {
+      "id": "TEN-024",
+      "title": "BRC-197 executable revenue-listing covenant",
+      "publisher": "bsv-blockchain/BRCs contributors (authors named in specification)",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/BRCs/blob/ed1b015bac53106ff34e5d1831acda378cbe5c04/tokens/0197.md",
+      "version": {
+        "commit": "ed1b015bac53106ff34e5d1831acda378cbe5c04",
+        "blob_sha": "7bc280f5762f352c1586be3fbec6e185ffab4f00"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Specifies exact covenant family with authenticated output constraints and separate genesis/lineage obligations.",
+        "Listing family has bounded input/output counts and satoshi revenue semantics."
+      ],
+      "limits": "Not a CBDC denomination protocol; accompanying corpus and independent-interpreter claims were not executed here."
+    },
+    {
+      "id": "TEN-025",
+      "title": "BRC-226 resale-royalty covenant proposal",
+      "publisher": "bsv-blockchain/BRCs contributors (authors named in specification)",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/BRCs/blob/ed1b015bac53106ff34e5d1831acda378cbe5c04/tokens/0226.md",
+      "version": {
+        "commit": "ed1b015bac53106ff34e5d1831acda378cbe5c04",
+        "blob_sha": "f10215e22c64ef03fabc1ae26a832c5c4882ba68"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Describes holder transfer, permissionless replication/purchase and holder burn; asserts deployment for one profile.",
+        "Claims genesis-only self-verification."
+      ],
+      "limits": "Deployment and security claims unverified here. Copy/genesis authenticity and fungible conservation must not be inferred from a terms commitment."
+    },
+    {
+      "id": "TEN-026",
+      "title": "Overlay-topics manifest",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/package.json",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "7dcd4e66688a9eafd50e993a65222936eb9cd7a0"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Source manifest reports @bsv/overlay-topics 2.0.1."
+      ],
+      "limits": "Not npm integrity/release verification."
+    },
+    {
+      "id": "TEN-027",
+      "title": "Regulated committed action schema",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/details.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "48f46dd8d128bcb58ab5657256b938af30be0f68"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Defines issue, redeem, reissue and control action details; issue optionally has bankRef.",
+        "No independent approver field was identified in the inspected schema."
+      ],
+      "limits": "Application governance must supply and bind independent approvals; this is a source observation, not a full audit."
+    },
+    {
+      "id": "TEN-028",
+      "title": "Overlay-topics package documentation",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/README.md",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "be83a731e5b2dd0610818b4719c07b67fddde2f0"
+      },
+      "access": "Complete file retrieved using GitHub connector; static read only",
+      "claims": [
+        "Documents regulated Mandala on BRC-162 and distinguishes topic/lookup components."
+      ],
+      "limits": "Documentation not runtime or production verification."
+    }
+  ]
+}

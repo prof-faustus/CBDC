@@ -8,9 +8,11 @@ Date: 7 October 2026. Scope: the exact source tree proposed by this foundation c
 - `python -m compileall -q cbdc_lab tests`: passed.
 - `python scripts/check_research.py`: validates evidence schema/required fields, unique source IDs and local Markdown links. It does not certify source truth or legal compliance.
 - `python -m cbdc_lab.demo`: completed the complete synthetic treasury/denomination lifecycle.
-- `python -m cbdc_lab.demo --observe-testnet`: completed and retrieved live BSV testnet chain status. See [recorded demo](demo-and-testnet-observation.json).
+- `python -m cbdc_lab.demo --observe-testnet`: completed and retrieved live BSV testnet chain status. The [first observation](demo-and-testnet-observation.json) was recorded at 08:20:33 UTC. The [final-code observation](final-demo-and-testnet-observation.json) succeeded at 08:46:07 UTC after one earlier connection timeout; it reported height 1,761,932. These are provider reads, not a broadcast or availability guarantee.
 
 Final command output and environment versions are stored beside this file. GitHub CI for the exact proposed commit is a separate check and must be inspected after the push; a local pass is not a hosted CI result.
+
+The first foundation commit, `2e4ffea0a99978ee751466b6a252ba951fe352e4`, passed GitHub CI on Python 3.12 and 3.13. All 31 files at that commit matched the prepared UTF-8 contents exactly. [Machine-readable receipt](github-foundation-verification.json). Subsequent documentation commits require their own remote/CI checks; this receipt intentionally remains pinned to the commit it proves.
 
 ## Coverage
 

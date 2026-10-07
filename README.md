@@ -49,6 +49,7 @@ The BSV test-network transaction stage is still open. It needs a reviewed token 
 - [Central-bank architecture and issuer liability](docs/research/central-bank/central-bank-architecture.md)
 - [Governance, privacy, recovery and operations](docs/research/central-bank/operational-control-baseline.md)
 - [Current BSV integration findings](docs/research/bsv-integration.md)
+- [Token enforcement: BTMS, regulated Mandala, co-signing and covenants](docs/research/token-enforcement/candidate-comparison.md)
 - [Architecture decisions](docs/architecture/decisions.md)
 - [Treasury and denomination specification](docs/architecture/treasury-and-denominations.md)
 - [Threat model](docs/architecture/threat-model.md)
@@ -57,6 +58,8 @@ The BSV test-network transaction stage is still open. It needs a reviewed token 
 - [Performance acceptance protocol](docs/testing/performance-plan.md)
 
 The 100,000 TPS operating floor is a project requirement. Official reports of Teranode's million-plus-TPS test-network work support blockchain capacity research; they are not a measured result for this application. No throughput target has been demonstrated by this reference ledger.
+
+The focused source review identifies regulated `tm_mandala` as a closer existing-code candidate than plain BTMS. Its supply and recovery rules are overlay-enforced above ordinary Bitcoin locks. It still needs independent treasury approvals, issuer-only retirement and adversarial bypass/recovery tests before it could satisfy this project's contract. The comparison records these boundaries rather than treating a token library as a completed CBDC.
 
 ## Repository and rights
 

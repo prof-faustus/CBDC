@@ -1,0 +1,149 @@
+{
+  "retrieved": "2026-10-07",
+  "locations": [
+    {
+      "id": "H01",
+      "source_id": "TEN-003",
+      "title": "BTMS partial-output admission",
+      "start_line": 158,
+      "end_line": 205,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/btms/BTMSTopicManager.ts#L158-L205",
+      "observation": "Source admits ISSUE unconditionally, accumulates per-asset totals, and admits individual acceptable outputs. Qualification must compare admitted indices to all requested outputs; do not infer transaction-level atomic token acceptance."
+    },
+    {
+      "id": "H02",
+      "source_id": "TEN-004",
+      "title": "BTMS admission regression witness",
+      "start_line": 449,
+      "end_line": 474,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/btms/__tests/BTMSTopicManager.test.ts#L449-L474",
+      "observation": "The repository includes a test deliberately exercising partial-prefix admission. It was read, not executed."
+    },
+    {
+      "id": "H03",
+      "source_id": "TEN-014",
+      "title": "Regulated monetary deltas",
+      "start_line": 244,
+      "end_line": 268,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/authority.ts#L244-L268",
+      "observation": "Exact holder transfer delta zero is an overlay predicate. Issue and redeem only constrain sign of delta here; CBDC officer quorum and treasury-owned retirement restriction remain application obligations."
+    },
+    {
+      "id": "H04",
+      "source_id": "TEN-014",
+      "title": "Concurrent supply cap",
+      "start_line": 260,
+      "end_line": 281,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/authority.ts#L260-L281",
+      "observation": "The cap reads current supply before admission. Prove deployment serialization/conflict handling for concurrent independent authority spends; this is a review obligation, not a reproduced exploit."
+    },
+    {
+      "id": "H05",
+      "source_id": "TEN-014",
+      "title": "Recovery authorization",
+      "start_line": 280,
+      "end_line": 313,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/authority.ts#L280-L313",
+      "observation": "Reissue references frozen state, positive replacement delta, no value inputs and named recipient. Review simultaneous or repeated reissues and stale control state."
+    },
+    {
+      "id": "H06",
+      "source_id": "TEN-017",
+      "title": "Overlay economic invalidation",
+      "start_line": 203,
+      "end_line": 228,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/MandalaStorageManager.ts#L203-L228",
+      "observation": "The supply filter excludes evicted outputs. The code's own comment identifies reissued frozen coins as remaining on chain. Native unspentness and economic money status must be represented separately."
+    },
+    {
+      "id": "H07",
+      "source_id": "TEN-015",
+      "title": "Control exceptions",
+      "start_line": 77,
+      "end_line": 97,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/controls.ts#L77-L97",
+      "observation": "Frozen/evicted-input checks occur before authority-transaction bypass of pause/access. Do not paraphrase the implementation as either no exceptions or unrestricted issuer bypass."
+    },
+    {
+      "id": "H08",
+      "source_id": "TEN-018",
+      "title": "Rollback precondition",
+      "start_line": 453,
+      "end_line": 456,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/MandalaLookupService.ts#L453-L456",
+      "observation": "Input restoration requires caller confirmation that the engine regards it unspent and admitted again. Test actual reorg/eviction integration; merely finding the helper is not sufficient."
+    },
+    {
+      "id": "H09",
+      "source_id": "TEN-021",
+      "title": "Multiple-topic broadcast",
+      "start_line": 1766,
+      "end_line": 1777,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/overlay/src/Engine.ts#L1766-L1777",
+      "observation": "An accepted second topic may enable broadcast when the CBDC topic rejects. Restrict/verify the requested topic set and test actual chain-spend reconciliation; no topical rejection can revoke Bitcoin-valid signatures."
+    },
+    {
+      "id": "H10",
+      "source_id": "TEN-021",
+      "title": "SPV bypass mode",
+      "start_line": 1719,
+      "end_line": 1727,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/overlay/src/Engine.ts#L1719-L1727",
+      "observation": "Normal submissions call transaction verification; the internal historical-no-SPV mode depends on prior independent inclusion verification. Ensure untrusted callers cannot obtain its trust."
+    },
+    {
+      "id": "H11",
+      "source_id": "TEN-019",
+      "title": "Exact script family",
+      "start_line": 107,
+      "end_line": 122,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/ownership.ts#L107-L122",
+      "observation": "Regulated Mandala intentionally narrows base BRC-162 to canonical P2PKH and one-satoshi carriers. A custom co-signature or covenant lock cannot be silently substituted while claiming this unchanged profile."
+    },
+    {
+      "id": "H12",
+      "source_id": "TEN-027",
+      "title": "Action schema vs treasury approval",
+      "start_line": 83,
+      "end_line": 92,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/overlays/topics/src/mandala/details.ts#L83-L92",
+      "observation": "Issue optionally carries bankRef; redeem has no action-specific required keys here. No independent officer approval was identified in inspected schema/checks. Additional signed evidence must bind exact instruction and transaction."
+    },
+    {
+      "id": "H13",
+      "source_id": "TEN-005",
+      "title": "Decoder consistency",
+      "start_line": 166,
+      "end_line": 179,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/wallet/btms/src/BTMSToken.ts#L166-L179",
+      "observation": "BTMS client recognizes metadata beginning with a JSON-object prefix; topic manager uses a printable/signature heuristic. Differential-test malformed/alternate metadata, field counts and script shape before trusting equal decoding."
+    },
+    {
+      "id": "H14",
+      "source_id": "TEN-010",
+      "title": "Source/spec status mismatch",
+      "start_line": 308,
+      "end_line": 311,
+      "url": "https://github.com/bsv-blockchain/BRCs/blob/ed1b015bac53106ff34e5d1831acda378cbe5c04/tokens/0162.md#L308-L311",
+      "observation": "Pinned BRC-162 says no implementation while the pinned ts-stack source contains regulated Mandala. Record source/code profile independently; do not claim normative completeness from a shared name."
+    },
+    {
+      "id": "H15",
+      "source_id": "TEN-011",
+      "title": "Local lineage proof limits",
+      "start_line": 42,
+      "end_line": 50,
+      "url": "https://github.com/bsv-blockchain/BRCs/blob/ed1b015bac53106ff34e5d1831acda378cbe5c04/tokens/0176.md#L42-L50",
+      "observation": "BRC-176 scopes the proof to subject outputs and excludes global mint completeness and current UTXO membership. Regulated admin-control state is an additional obligation."
+    },
+    {
+      "id": "H16",
+      "source_id": "TEN-024",
+      "title": "Covenant origin authenticity",
+      "start_line": 39,
+      "end_line": 41,
+      "url": "https://github.com/bsv-blockchain/BRCs/blob/ed1b015bac53106ff34e5d1831acda378cbe5c04/tokens/0197.md#L39-L41",
+      "observation": "Concrete covenant specification separates script transition validity from authenticated genesis/lineage. Require counterfeit-copy tests for proposed currency covenants as well."
+    }
+  ]
+}

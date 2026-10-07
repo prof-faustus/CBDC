@@ -48,6 +48,8 @@ An audit digest on BSV can witness a commitment under stated assumptions. It can
 
 No token standard is selected merely because it exposes a `mint` method. Consensus script validation, overlay indexing, issuer rules and legal entitlement are different enforcement layers. A proof obligation and adversarial test corpus precede implementation selection.
 
+The completed [source-level comparison](../research/token-enforcement/candidate-comparison.md) now identifies regulated Mandala and an issuer/holder co-signature design as the focused shortlist. Regulated Mandala's monetary controls are overlay predicates above P2PKH, not native consensus rules. Its existing code still requires qualification against the treasury contract. No package has been installed or adopted by this decision.
+
 ## ADR-009: Explicit completion states
 
 Local application state, node/provider acknowledgement, broadcast observation, block inclusion, confirmation-policy completion and legal finality require separate records. Future adapters must store block hashes and detect orphaning; a status string such as `IMMUTABLE` from a provider is not an independent legal guarantee. Unknown broadcast outcomes retain the same transaction identity while being reconciled.

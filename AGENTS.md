@@ -1,7 +1,7 @@
 # Project working rules
 
 - This is research and synthetic test software. Never describe it as sovereign money, government-approved, production-ready or certified.
-- Preserve existing files and concurrent changes. Use an isolated branch and a draft pull request for substantive changes; do not merge or deploy without authorization.
+- Preserve existing files and concurrent changes. Use an isolated branch for substantive changes. Create a pull request only when explicitly authorized; do not merge or deploy without authorization.
 - Use public primary sources. Record dates, exact URLs, versions, claims, limitations and access status. Do not add private manuscripts, identity records, keys, secrets or unpublished patent material.
 - Keep one instrument, issuer definition and integer unit scale per ledger. Splits, merges and ordinary payments must conserve supply.
 - Separate treasury administration from legal issuance authority. Supply changes require independently authorized instructions and matching accounting entries.

@@ -30,4 +30,4 @@ No signing/broadcast path is implemented. An unsigned commitment request is not 
 
 ## Publication checks
 
-Run tests, compile checks and research checks on the final tree. Inspect the diff for secrets, private sources, accidental databases and claims stronger than the evidence. Use an isolated branch and draft PR. Verify remote file bytes and the exact-head CI result. Do not merge, deploy or change repository visibility as a side effect.
+Run tests, compile checks and research checks on the final tree. Inspect the diff for secrets, private sources, accidental databases and claims stronger than the evidence. Use an isolated branch; create a pull request only when explicitly authorized. Verify remote file bytes and the exact-head CI result. Do not merge, deploy or change repository visibility as a side effect.
