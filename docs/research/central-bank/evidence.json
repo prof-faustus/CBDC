@@ -1,0 +1,400 @@
+{
+  "schema_version": "1.0",
+  "scope": "Jurisdiction-neutral CBDC architecture research; public sources only",
+  "retrieved": "2026-10-07",
+  "interpretation": "Source facts are separated from proposed engineering decisions. Source status is not an assertion of legal force in an unspecified jurisdiction.",
+  "sources": [
+    {
+      "id": "CB-001",
+      "title": "Central bank digital currencies: foundational principles and core features",
+      "publisher": "Seven central banks and Bank for International Settlements",
+      "published": "2020-10-09",
+      "status": "Published joint analytical report; no issuance decision or binding law",
+      "url": "https://www.bis.org/publications/central-bank-digital-currencies-foundational-principles-and-core-features",
+      "document_url": "https://www.bis.org/publ/othp33.pdf",
+      "location": "Section 1 definition; sections 3.1–3.2 and Table 1",
+      "claims": [
+        {
+          "id": "CB-001-C1",
+          "text": "A CBDC represents a central-bank liability in the existing national unit of account.",
+          "support_location": "Section 1 definition; sections 3.1–3.2 and Table 1"
+        },
+        {
+          "id": "CB-001-C2",
+          "text": "The report prioritises monetary and financial stability, coexistence with existing money, and innovation; par conversion supports currency singleness.",
+          "support_location": "Section 1 definition; sections 3.1–3.2 and Table 1"
+        }
+      ],
+      "limits": "General-purpose CBDC principles from participating authorities, not universal legal requirements or approval to issue.",
+      "access": "Official landing page read; indexed official PDF excerpts inspected. Direct full-PDF retrieval failed.",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    },
+    {
+      "id": "CB-002",
+      "title": "Central bank digital currencies: system design and interoperability",
+      "publisher": "Seven central banks and Bank for International Settlements",
+      "published": "2021-09-30",
+      "status": "Published joint analytical report",
+      "url": "https://www.bis.org/publications/central-bank-digital-currencies-executive-summary",
+      "document_url": "https://www.bis.org/publications/othp42-system-design.pdf",
+      "location": "Sections 2.1–2.3, Table 1, Box 1 and section 3",
+      "claims": [
+        {
+          "id": "CB-002-C1",
+          "text": "Issuance and redemption remain central-bank functions; ecosystem responsibilities include a rulebook, core infrastructure, processing and user-facing services.",
+          "support_location": "Sections 2.1–2.3, Table 1, Box 1 and section 3"
+        },
+        {
+          "id": "CB-002-C2",
+          "text": "The participating banks envisage public-private collaboration; account/token terminology is ambiguous across disciplines.",
+          "support_location": "Sections 2.1–2.3, Table 1, Box 1 and section 3"
+        }
+      ],
+      "limits": "Describes design options and participants' preferences; does not require a particular ledger or exclude direct models in other jurisdictions.",
+      "access": "Official PDF relevant sections read.",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    },
+    {
+      "id": "CB-003",
+      "title": "Central bank digital currencies: financial stability implications",
+      "publisher": "Seven central banks and Bank for International Settlements",
+      "published": "2021-09-30",
+      "status": "Published joint analytical report",
+      "url": "https://www.bis.org/publications/central-bank-digital-currencies-executive-summary",
+      "document_url": "https://www.bis.org/publications/othp42-fin-stab.pdf",
+      "location": "Section 5, especially Table 4 and sections 5.1–5.2",
+      "claims": [
+        {
+          "id": "CB-003-C1",
+          "text": "Holding and transaction limits and remuneration are alternative safeguards with adoption and financial-stability trade-offs.",
+          "support_location": "Section 5, especially Table 4 and sections 5.1–5.2"
+        },
+        {
+          "id": "CB-003-C2",
+          "text": "A waterfall can route excess holdings to another account; safeguards can require additional data and processing.",
+          "support_location": "Section 5, especially Table 4 and sections 5.1–5.2"
+        }
+      ],
+      "limits": "Options are not calibrated rules for an unspecified country. PDF search metadata mislabels its title; the document cover confirms this title.",
+      "access": "Official PDF cover and safeguard sections read.",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    },
+    {
+      "id": "CB-004",
+      "title": "Central bank digital currencies: System design",
+      "publisher": "Seven central banks and Bank for International Settlements",
+      "published": "2024-11-26",
+      "status": "Published joint analytical report; open design questions remain",
+      "url": "https://www.bis.org/publications/central-bank-digital-currencies-system-design",
+      "document_url": "https://www.bis.org/publications/central-bank-digital-currencies-system-design.pdf",
+      "location": "Sections 2 and 3a–3c; Boxes 1–3; Table 1",
+      "claims": [
+        {
+          "id": "CB-004-C1",
+          "text": "A two-tier design can combine centralised and decentralised components; privacy requires institutional, operational and technical choices.",
+          "support_location": "Sections 2 and 3a–3c; Boxes 1–3; Table 1"
+        },
+        {
+          "id": "CB-004-C2",
+          "text": "Privacy technologies have performance and implementation trade-offs; offline settlement and quantum-era cryptography introduce additional risks.",
+          "support_location": "Sections 2 and 3a–3c; Boxes 1–3; Table 1"
+        }
+      ],
+      "limits": "Two-tier retail focus. Offline functionality is not endorsed as desirable for every jurisdiction. Experiments do not establish production readiness.",
+      "access": "Official PDF relevant sections read.",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    },
+    {
+      "id": "CB-005",
+      "title": "Legal Aspects of Central Bank Digital Currency: Central Bank and Monetary Law Considerations",
+      "publisher": "International Monetary Fund, Working Paper 2020/254",
+      "published": "2020-11-20",
+      "status": "Staff working paper; authors' views, not an IMF legal ruling",
+      "url": "https://www.imf.org/en/publications/wp/issues/2020/11/20/legal-aspects-of-central-bank-digital-currency-central-bank-and-monetary-law-considerations-49827",
+      "document_url": "https://www.imf.org/-/media/files/publications/wp/2020/english/wpiea2020254-print-pdf.pdf",
+      "location": "Introduction; paragraph 16; central-bank-law and monetary-law analysis",
+      "claims": [
+        {
+          "id": "CB-005-C1",
+          "text": "Authority to issue CBDC and its currency/legal-tender treatment require legal foundations; design influences those questions.",
+          "support_location": "Introduction; paragraph 16; central-bank-law and monetary-law analysis"
+        },
+        {
+          "id": "CB-005-C2",
+          "text": "A commercial-bank liability fully backed by central-bank deposits remains distinct from a direct central-bank liability.",
+          "support_location": "Introduction; paragraph 16; central-bank-law and monetary-law analysis"
+        }
+      ],
+      "limits": "Historical comparative research, not a current legal opinion for any selected jurisdiction. Its 2020 legal-authority statistics must not be represented as current.",
+      "access": "Official landing page and PDF relevant sections read.",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    },
+    {
+      "id": "CB-006",
+      "title": "Principles for financial market infrastructures",
+      "publisher": "CPSS and IOSCO",
+      "published": "2012-04-16",
+      "status": "Final international standards; domestic applicability requires assessment",
+      "url": "https://www.bis.org/publications/principles-financial-market-infrastructures",
+      "document_url": "https://www.bis.org/publications/principles-financial-market-infrastructures.pdf",
+      "location": "Principles 1, 2, 3, 8, 9, 17, 20 and 23; paragraph 3.2.7",
+      "claims": [
+        {
+          "id": "CB-006-C1",
+          "text": "PFMI addresses legal basis, governance, risk management, settlement finality, operational risk and links.",
+          "support_location": "Principles 1, 2, 3, 8, 9, 17, 20 and 23; paragraph 3.2.7"
+        },
+        {
+          "id": "CB-006-C2",
+          "text": "Rules should identify when settlement is final. Central-bank-operated systems may tailor governance application to their mandates.",
+          "support_location": "Principles 1, 2, 3, 8, 9, 17, 20 and 23; paragraph 3.2.7"
+        }
+      ],
+      "limits": "Applies to defined FMIs, including systemically important payment systems. This repository cannot self-certify PFMI compliance or assume every principle applies unchanged.",
+      "access": "Official final publication page and PDF relevant sections read.",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    },
+    {
+      "id": "CB-007",
+      "title": "Guidance on cyber resilience for financial market infrastructures",
+      "publisher": "CPMI and IOSCO",
+      "published": "2016-06-29",
+      "status": "Final guidance supplementing PFMI",
+      "url": "https://www.bis.org/publications/guidance-cyber-resilience-financial-market-infrastructures",
+      "document_url": "https://www.bis.org/publications/guidance-cyber-resilience-financial-market-infrastructures.pdf",
+      "location": "Sections 1.3 and 6.2–6.3",
+      "claims": [
+        {
+          "id": "CB-007-C1",
+          "text": "Resumption planning must preserve integrity and coordinate with affected participants.",
+          "support_location": "Sections 1.3 and 6.2–6.3"
+        },
+        {
+          "id": "CB-007-C2",
+          "text": "The guidance addresses safe two-hour resumption capability and day-end settlement, while requiring contingency planning and judgment where resumption would increase risk.",
+          "support_location": "Sections 1.3 and 6.2–6.3"
+        }
+      ],
+      "limits": "An FMI benchmark, not a proven CBDC service-level agreement; it does not justify unsafe restart or replace a system-specific recovery design.",
+      "access": "Official final publication page and PDF relevant sections read.",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    },
+    {
+      "id": "CB-008",
+      "title": "The digital pound: Technology Working Paper",
+      "publisher": "Bank of England",
+      "published": "2023-02-07",
+      "status": "Consultative technology working paper; historical conceptual design",
+      "url": "https://www.bankofengland.co.uk/paper/2023/the-digital-pound-technology-working-paper",
+      "document_url": "https://www.bankofengland.co.uk/-/media/boe/files/paper/2023/the-digital-pound-technology-working-paper.pdf",
+      "location": "Illustrative conceptual model; resilience discussion, pages 36–38; ledger discussion, page 48",
+      "claims": [
+        {
+          "id": "CB-008-C1",
+          "text": "The illustrative platform model separates core infrastructure from intermediary services.",
+          "support_location": "Illustrative conceptual model; resilience discussion, pages 36–38; ledger discussion, page 48"
+        },
+        {
+          "id": "CB-008-C2",
+          "text": "Resilience design includes explicit recovery metrics, trusted backups and reconciliation; transaction history supports audit and dispute handling.",
+          "support_location": "Illustrative conceptual model; resilience discussion, pages 36–38; ledger discussion, page 48"
+        }
+      ],
+      "limits": "UK-specific emerging thinking, not a selected architecture for this project. Read alongside the 2024 response and later jurisdiction decisions.",
+      "access": "Official landing page and PDF relevant sections read.",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    },
+    {
+      "id": "CB-009",
+      "title": "Response to the digital pound Technology Working Paper",
+      "publisher": "Bank of England",
+      "published": "2024-01-25",
+      "status": "Published consultation response; design-stage work",
+      "url": "https://www.bankofengland.co.uk/paper/2024/response-to-the-digital-pound-technology-working-paper",
+      "document_url": null,
+      "location": "Sections on Bank-managed infrastructure, data and ledger design",
+      "claims": [
+        {
+          "id": "CB-009-C1",
+          "text": "The Bank distinguished operational metadata from aggregated anonymised analytical data in its proposed infrastructure.",
+          "support_location": "Sections on Bank-managed infrastructure, data and ledger design"
+        },
+        {
+          "id": "CB-009-C2",
+          "text": "The response records differing ledger proposals and continued design work rather than a settled universal technology choice.",
+          "support_location": "Sections on Bank-managed infrastructure, data and ledger design"
+        }
+      ],
+      "limits": "UK design intentions and consultation findings; does not establish anonymity or implementation assurance for another system.",
+      "access": "Official HTML relevant sections read.",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    },
+    {
+      "id": "CB-010",
+      "title": "FAQs on the digital euro",
+      "publisher": "European Central Bank",
+      "published": null,
+      "updated": "2026-08-17",
+      "status": "Living official project FAQ; prospective design and legislation-dependent issuance",
+      "url": "https://www.ecb.europa.eu/euro/digital_euro/faqs/html/ecb.faq_digital_euro.en.html",
+      "document_url": null,
+      "location": "Questions 12, 14, 15, 18, 20 and 24",
+      "claims": [
+        {
+          "id": "CB-010-C1",
+          "text": "The proposed digital euro uses the same euro unit, with centralised settlement; its issuance decision follows adoption of its legislative framework.",
+          "support_location": "Questions 12, 14, 15, 18, 20 and 24"
+        },
+        {
+          "id": "CB-010-C2",
+          "text": "The ECB distinguishes conditional payments from money restricted by purpose, time, place or counterparty; proposed safeguards include holding limits and no interest.",
+          "support_location": "Questions 12, 14, 15, 18, 20 and 24"
+        }
+      ],
+      "limits": "Euro-area example only. Do not describe intended capabilities as deployed, hypothetical holding-limit scenarios as chosen limits, or proposed regulation as adopted law.",
+      "access": "Official FAQ read; update date visible.",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    },
+    {
+      "id": "CB-011",
+      "title": "Digital euro and privacy",
+      "publisher": "European Central Bank",
+      "published": null,
+      "status": "Undated living project explainer; prospective privacy design",
+      "url": "https://www.ecb.europa.eu/euro/digital_euro/features/privacy/html/index.en.html",
+      "document_url": null,
+      "location": "Who would have access to your data?; State-of-the-art privacy measures; Legislative framework",
+      "claims": [
+        {
+          "id": "CB-011-C1",
+          "text": "The proposed design limits Eurosystem visibility through pseudonymisation and gives intermediaries data needed for legal compliance.",
+          "support_location": "Who would have access to your data?; State-of-the-art privacy measures; Legislative framework"
+        },
+        {
+          "id": "CB-011-C2",
+          "text": "Offline payment details are intended to remain with payer and payee; institutional oversight accompanies technological protections.",
+          "support_location": "Who would have access to your data?; State-of-the-art privacy measures; Legislative framework"
+        }
+      ],
+      "limits": "Policy/design intention, not proof of deployed anonymity; pseudonymisation does not itself guarantee unlinkability.",
+      "access": "Official HTML read; no publication date displayed.",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    },
+    {
+      "id": "CB-012",
+      "title": "Project Polaris: handbook for offline payments with CBDC",
+      "publisher": "BIS Innovation Hub",
+      "published": "2023-05-11",
+      "status": "Published research handbook",
+      "url": "https://www.bis.org/publications/project-polaris-handbook-offline-payments-cbdc",
+      "document_url": "https://www.bis.org/publications/project-polaris-handbook-offline-payments-cbdc.pdf",
+      "location": "Sections 4.4.3–4.5; security/risk-management chapters",
+      "claims": [
+        {
+          "id": "CB-012-C1",
+          "text": "Offline CBDC design joins technology choices to privacy, inclusion, risk and operating responsibilities.",
+          "support_location": "Sections 4.4.3–4.5; security/risk-management chapters"
+        },
+        {
+          "id": "CB-012-C2",
+          "text": "Device replacement, purse reprovisioning and offline-value recovery require explicit treatment rather than assuming an online backup solves them.",
+          "support_location": "Sections 4.4.3–4.5; security/risk-management chapters"
+        }
+      ],
+      "limits": "No universal offline solution; evidence from researched designs is not assurance of tamper resistance or safe unrestricted offline recirculation.",
+      "access": "Official publication page and PDF relevant sections read.",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    },
+    {
+      "id": "CB-013",
+      "title": "Project Polaris: a security and resilience framework for CBDC systems (part 2)",
+      "publisher": "BIS Innovation Hub",
+      "published": "2023-07-07",
+      "status": "Published framework and control objectives; not a certification",
+      "url": "https://www.bis.org/publications/project-polaris-security-and-resilience-framework-cbdc-systems-part-2",
+      "document_url": "https://www.bis.org/publications/project-polaris-security-and-resilience-framework-cbdc-systems-part-2.pdf",
+      "location": "Sections 5–6; Appendix A Recover and Adapt; Appendix B",
+      "claims": [
+        {
+          "id": "CB-013-C1",
+          "text": "Security is an ecosystem lifecycle spanning preparation, identification, protection, detection, response, recovery and adaptation.",
+          "support_location": "Sections 5–6; Appendix A Recover and Adapt; Appendix B"
+        },
+        {
+          "id": "CB-013-C2",
+          "text": "Recovery should preserve transaction status and participant positions; cryptographic migration and cross-organisation responsibilities require planning.",
+          "support_location": "Sections 5–6; Appendix A Recover and Adapt; Appendix B"
+        }
+      ],
+      "limits": "Tailor controls and demonstrate operation; a checklist or smart-contract audit does not establish resilience.",
+      "access": "Official publication page and PDF relevant sections read.",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    },
+    {
+      "id": "CB-014",
+      "title": "Options for access to and interoperability of CBDCs for cross-border payments",
+      "publisher": "CPMI, BIS Innovation Hub, IMF and World Bank",
+      "published": "2022-07-11",
+      "status": "Published joint analytical report to the G20",
+      "url": "https://www.bis.org/publications/options-access-and-interoperability-cbdcs-cross-border-payments",
+      "document_url": "https://www.bis.org/publications/options-access-and-interoperability-cbdcs-cross-border-payments.pdf",
+      "location": "Executive summary and sections 3–5",
+      "claims": [
+        {
+          "id": "CB-014-C1",
+          "text": "Interoperability models include compatible standards, interlinked systems and a common system.",
+          "support_location": "Executive summary and sections 3–5"
+        },
+        {
+          "id": "CB-014-C2",
+          "text": "Foreign access, legal arrangements, governance and coordination matter alongside technology; no model is universally appropriate.",
+          "support_location": "Executive summary and sections 3–5"
+        }
+      ],
+      "limits": "Interoperability is not established merely by deploying on a shared chain or exposing an API. FX and participant access need separate decisions.",
+      "access": "Official publication page and PDF relevant sections read.",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    },
+    {
+      "id": "CB-015",
+      "title": "Recommendation for Key Management: Part 1 – General, SP 800-57 Part 1 Revision 5",
+      "publisher": "National Institute of Standards and Technology",
+      "published": "2020-05-04",
+      "status": "Final Revision 5 as served; Revision 6 initial public draft also listed",
+      "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+      "document_url": "https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-57pt1r5.pdf",
+      "location": "Sections 5.5.2, 8.1.5.2.1 and 8.1.5.2.2.1; key lifecycle sections",
+      "claims": [
+        {
+          "id": "CB-015-C1",
+          "text": "Key management includes lifecycle protection, inventory, compromise response, replacement and recovery planning.",
+          "support_location": "Sections 5.5.2, 8.1.5.2.1 and 8.1.5.2.2.1; key lifecycle sections"
+        },
+        {
+          "id": "CB-015-C2",
+          "text": "Split-knowledge handling prevents any single individual from acquiring all key shares under the stated procedures.",
+          "support_location": "Sections 5.5.2, 8.1.5.2.1 and 8.1.5.2.2.1; key lifecycle sections"
+        }
+      ],
+      "limits": "General technical guidance, not CBDC law. Recheck current algorithm guidance and revisions before implementation; do not infer that every key should be backed up.",
+      "access": "Official final page and PDF relevant sections read; project page checked.",
+      "related_status_url": "https://csrc.nist.gov/projects/key-management/key-management-guidelines",
+      "retrieved": "2026-10-07",
+      "source_type": "primary"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+test_invalid_heads (tests.test_anchor.AnchorTests.test_invalid_heads) ... ok
+test_invalid_verification_rejected (tests.test_anchor.AnchorTests.test_invalid_verification_rejected) ... ok
+test_observer_fixed_testnet_endpoint (tests.test_anchor.AnchorTests.test_observer_fixed_testnet_endpoint) ... ok
+test_observer_rejects_wrong_network_and_malformed_responses (tests.test_anchor.AnchorTests.test_observer_rejects_wrong_network_and_malformed_responses) ... ok
+test_request_never_enables_broadcast (tests.test_anchor.AnchorTests.test_request_never_enables_broadcast) ... ok
+test_script_contains_only_domain_and_digest (tests.test_anchor.AnchorTests.test_script_contains_only_domain_and_digest) ... ok
+test_audit_corruption_detected (tests.test_ledger.LedgerTests.test_audit_corruption_detected) ... ok
+test_balanced_note_tampering_detected (tests.test_ledger.LedgerTests.test_balanced_note_tampering_detected) ... ok
+test_changed_replay_rejected (tests.test_ledger.LedgerTests.test_changed_replay_rejected) ... ok
+test_concurrent_double_spend_has_one_winner (tests.test_ledger.LedgerTests.test_concurrent_double_spend_has_one_winner) ... ok
+test_consistent_backup_restore (tests.test_ledger.LedgerTests.test_consistent_backup_restore) ... ok
+test_demo (tests.test_ledger.LedgerTests.test_demo) ... ok
+test_double_spend_rejected (tests.test_ledger.LedgerTests.test_double_spend_rejected) ... ok
+test_duplicate_input_rejected (tests.test_ledger.LedgerTests.test_duplicate_input_rejected) ... ok
+test_empty_inputs_and_outputs_rejected (tests.test_ledger.LedgerTests.test_empty_inputs_and_outputs_rejected) ... ok
+test_exact_100_to_2000_five_cents_and_back (tests.test_ledger.LedgerTests.test_exact_100_to_2000_five_cents_and_back) ... ok
+test_fanout_over_bound_is_rejected_atomically (tests.test_ledger.LedgerTests.test_fanout_over_bound_is_rejected_atomically) ... ok
+test_holder_cannot_mint (tests.test_ledger.LedgerTests.test_holder_cannot_mint) ... ok
+test_holding_limit_enforced_after_consuming_own_notes (tests.test_ledger.LedgerTests.test_holding_limit_enforced_after_consuming_own_notes) ... ok
+test_inactive_frozen_unknown_and_privileged_owners_rejected (tests.test_ledger.LedgerTests.test_inactive_frozen_unknown_and_privileged_owners_rejected) ... ok
+test_issuer_cannot_approve_own_proposal (tests.test_ledger.LedgerTests.test_issuer_cannot_approve_own_proposal) ... ok
+test_journal_tampering_detected (tests.test_ledger.LedgerTests.test_journal_tampering_detected) ... ok
+test_limit_checked_at_approval (tests.test_ledger.LedgerTests.test_limit_checked_at_approval) ... ok
+test_mainnet_and_currency_change_fail_closed (tests.test_ledger.LedgerTests.test_mainnet_and_currency_change_fail_closed) ... ok
+test_malformed_amounts_rejected (tests.test_ledger.LedgerTests.test_malformed_amounts_rejected) ... ok
+test_mint_and_approval_replay_do_not_inflate (tests.test_ledger.LedgerTests.test_mint_and_approval_replay_do_not_inflate) ... ok
+test_mixed_denominations (tests.test_ledger.LedgerTests.test_mixed_denominations) ... ok
+test_no_supply_creation_or_destruction_in_transfer (tests.test_ledger.LedgerTests.test_no_supply_creation_or_destruction_in_transfer) ... ok
+test_operation_tampering_detected (tests.test_ledger.LedgerTests.test_operation_tampering_detected) ... ok
+test_policy_registry_change_fails_closed (tests.test_ledger.LedgerTests.test_policy_registry_change_fails_closed) ... ok
+test_process_restart_preserves_state_and_replay (tests.test_ledger.LedgerTests.test_process_restart_preserves_state_and_replay) ... ok
+test_proposal_has_no_economic_effect (tests.test_ledger.LedgerTests.test_proposal_has_no_economic_effect) ... ok
+test_reason_and_request_id_validation (tests.test_ledger.LedgerTests.test_reason_and_request_id_validation) ... ok
+test_retirement_requires_treasury_custody_and_dual_control (tests.test_ledger.LedgerTests.test_retirement_requires_treasury_custody_and_dual_control) ... ok
+test_retirement_revalidates_spent_inputs (tests.test_ledger.LedgerTests.test_retirement_revalidates_spent_inputs) ... ok
+test_seeded_random_partition_conservation (tests.test_ledger.LedgerTests.test_seeded_random_partition_conservation) ... ok
+test_supply_cap (tests.test_ledger.LedgerTests.test_supply_cap) ... ok
+test_transfer_replay_is_idempotent (tests.test_ledger.LedgerTests.test_transfer_replay_is_idempotent) ... ok
+test_wrong_approval_hash_rejected (tests.test_ledger.LedgerTests.test_wrong_approval_hash_rejected) ... ok
+test_wrong_owner_rejected (tests.test_ledger.LedgerTests.test_wrong_owner_rejected) ... ok
+test_concurrent_approval_is_idempotent (tests.test_review_regressions.ReviewRegressionTests.test_concurrent_approval_is_idempotent) ... ok
+test_concurrent_approvals_cannot_exceed_supply_cap (tests.test_review_regressions.ReviewRegressionTests.test_concurrent_approvals_cannot_exceed_supply_cap) ... ok
+test_concurrent_transfer_replay_is_idempotent (tests.test_review_regressions.ReviewRegressionTests.test_concurrent_transfer_replay_is_idempotent) ... ok
+test_corrupted_proposal_body_cannot_apply_under_old_hash (tests.test_review_regressions.ReviewRegressionTests.test_corrupted_proposal_body_cannot_apply_under_old_hash) ... ok
+test_generator_inputs_and_outputs_fail_closed (tests.test_review_regressions.ReviewRegressionTests.test_generator_inputs_and_outputs_fail_closed) ... ok
+test_gross_journal_totals_can_exceed_signed_integer_limit (tests.test_review_regressions.ReviewRegressionTests.test_gross_journal_totals_can_exceed_signed_integer_limit) ... ok
+test_mint_audit_failure_rolls_back_outputs_and_journal (tests.test_review_regressions.ReviewRegressionTests.test_mint_audit_failure_rolls_back_outputs_and_journal) ... ok
+test_retirement_audit_failure_rolls_back_spend_and_journal (tests.test_review_regressions.ReviewRegressionTests.test_retirement_audit_failure_rolls_back_spend_and_journal) ... ok
+test_retirement_replay_changes_no_state (tests.test_review_regressions.ReviewRegressionTests.test_retirement_replay_changes_no_state) ... ok
+test_sql_like_reason_stays_literal_and_invalid_ids_have_no_effect (tests.test_review_regressions.ReviewRegressionTests.test_sql_like_reason_stays_literal_and_invalid_ids_have_no_effect) ... ok
+test_transfer_audit_failure_rolls_back_all_changes (tests.test_review_regressions.ReviewRegressionTests.test_transfer_audit_failure_rolls_back_all_changes) ... ok
+test_verify_uses_one_snapshot_during_concurrent_write (tests.test_review_regressions.ReviewRegressionTests.test_verify_uses_one_snapshot_during_concurrent_write) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 0.311s
+
+OK

@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-10-07T08:30:13.848410+00:00",
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "platform": "Linux",
+  "tests": 52,
+  "unit_tests": "passed",
+  "compileall": "passed",
+  "network_scope": "read_only_testnet_provider",
+  "signing": "not_implemented",
+  "broadcast": "not_implemented",
+  "performance_target": "not_tested"
+}

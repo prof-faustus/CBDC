@@ -1,0 +1,31 @@
+name: Synthetic treasury checks
+
+on:
+  push:
+    branches: [main, 'research/**']
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  reference-model:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        python: ['3.12', '3.13']
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, resolved 2026-10-07
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5, resolved 2026-10-07
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Compile reference model
+        run: python -m compileall -q cbdc_lab tests
+      - name: Run synthetic unit and failure tests
+        run: python -m unittest discover -v
+      - name: Check research references
+        run: python scripts/check_research.py
+      - name: Run offline demonstration
+        run: python -m cbdc_lab.demo

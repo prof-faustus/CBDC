@@ -1,0 +1,42 @@
+{
+  "mode": "simulation",
+  "currency": "TUSD",
+  "real_money": false,
+  "issued_minor_units": 10000,
+  "five_cent_outputs_created": 2000,
+  "merged_minor_units": 10000,
+  "retired_minor_units": 3335,
+  "remaining_minor_units": 6665,
+  "verification": {
+    "ok": true,
+    "mode": "simulation",
+    "supply": 6665,
+    "liability": 6665,
+    "journal_debits": 13335,
+    "journal_credits": 13335,
+    "audit_events": 9,
+    "audit_head": "a69c5a85017fea1e89bd9334ed6a74725aaefbf76e47be7faae0eb6715b632a4"
+  },
+  "bsv_anchor_request": {
+    "schema": 1,
+    "network": "bsv-testnet",
+    "purpose": "synthetic-audit-commitment",
+    "audit_head": "a69c5a85017fea1e89bd9334ed6a74725aaefbf76e47be7faae0eb6715b632a4",
+    "locking_script_hex": "006a10434244432d4c41423a544553543a563120a69c5a85017fea1e89bd9334ed6a74725aaefbf76e47be7faae0eb6715b632a4",
+    "output_satoshis": 0,
+    "currency_principal_in_satoshis": false,
+    "status": "unsigned_request_only",
+    "broadcast_enabled": false,
+    "request_hash": "c9d3eb456e2aca770f2973873dbd2fe859891b9633f2c12b17ad9e3c2ac7ebde"
+  },
+  "testnet_observation": {
+    "observed_at": "2026-10-07T08:20:33.676465+00:00",
+    "source_url": "https://api.whatsonchain.com/v1/bsv/test/chain/info",
+    "source_response_sha256": "b42ccad7b2d667e3712e7f5940d99cdeada663b6d1d5b8674bc5567f2ef76672",
+    "chain": "test",
+    "height": 1761928,
+    "best_block_hash": "00000000013f433e6ab4b74dcbcd81b4efaff0c3bb2282086ffc10ec4ca0abc2",
+    "verification": "provider_report_only",
+    "transaction_submitted": false
+  }
+}

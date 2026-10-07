@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0",
+  "scope": "BSV source and public testnet research; no signing/broadcast",
+  "retrieved": "2026-10-07",
+  "sources": [
+    {
+      "id": "BSV-001",
+      "title": "BSV TypeScript monorepo",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "published": null,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/README.md",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "44373ff67088929397c75a48376edabb68da4e85"
+      },
+      "access": "Complete file retrieved using GitHub connector",
+      "claims": [
+        "The maintained ts-stack repository includes the SDK, wallet, network, overlay and related packages.",
+        "Published-package and development prerequisites differ."
+      ],
+      "limits": "Repository documentation is not installation, production assurance or licence clearance."
+    },
+    {
+      "id": "BSV-002",
+      "title": "Open BSV License Version 6",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "published": null,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/sdk/LICENSE.txt",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "15e819500f2515d01c693bfb6683611591b869d0"
+      },
+      "access": "Complete file retrieved using GitHub connector",
+      "claims": [
+        "The SDK source license restricts use to the BSV Blockchain as defined in its terms and requires notice retention."
+      ],
+      "limits": "Terms require legal review for the chosen use; no determination of patent rights, compatibility or compliance has been made."
+    },
+    {
+      "id": "BSV-003",
+      "title": "Default broadcaster implementation",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "published": null,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/sdk/src/transaction/broadcasters/DefaultBroadcaster.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "89837d666b73904ac119413a6f86076b2b36af2a"
+      },
+      "access": "Complete file retrieved using GitHub connector",
+      "claims": [
+        "The defaultBroadcaster function defaults to mainnet; setting isTestnet selects https://testnet.arc.gorillapool.io."
+      ],
+      "limits": "Reading source does not establish endpoint availability, service terms, capacity or credentials."
+    },
+    {
+      "id": "BSV-004",
+      "title": "WhatsOnChain broadcaster implementation",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "published": null,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/sdk/src/transaction/broadcasters/WhatsOnChainBroadcaster.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "266d616ce3dd40df5bfaf37b849650c8b2a4a82d"
+      },
+      "access": "Complete file retrieved using GitHub connector",
+      "claims": [
+        "The broadcaster supports main, test and stn network selectors and checks the acknowledged transaction ID against the submitted transaction."
+      ],
+      "limits": "Submission acknowledgement is not block inclusion or legal finality. No broadcaster was executed."
+    },
+    {
+      "id": "BSV-005",
+      "title": "ARC broadcaster implementation",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "published": null,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/sdk/src/transaction/broadcasters/ARC.ts",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "69c281068181380bca8ed8534374aaa3ff20442c"
+      },
+      "access": "Complete file retrieved using GitHub connector",
+      "claims": [
+        "The source distinguishes rejected/conflicting/stale-block results and validates provider transaction identifiers.",
+        "Several accepted status strings represent different network-processing stages."
+      ],
+      "limits": "A library success result or provider label does not independently prove settlement finality."
+    },
+    {
+      "id": "BSV-006",
+      "title": "Fund-wallet helper documentation",
+      "publisher": "BSV Association / bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "published": null,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/helpers/fund-wallet/README.md",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "blob_sha": "2f33ad0329d941f6d4d408c1c02dd327a6cabd43"
+      },
+      "access": "Complete file retrieved using GitHub connector",
+      "claims": [
+        "The helper requires explicit chain selection and obtains a private key without accepting it as a command-line argument; funding depends on a local wallet."
+      ],
+      "limits": "The helper was inspected only, not installed or run; no wallet or persistent credentials were created."
+    },
+    {
+      "id": "BSV-007",
+      "title": "SDK package manifest",
+      "publisher": "bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "published": null,
+      "url": "https://github.com/bsv-blockchain/ts-stack/blob/edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9/packages/sdk/package.json",
+      "version": {
+        "commit": "edf6e03dad39bd7bc4fc6e73e64de3a2b6f805c9",
+        "source_manifest_version": "3.2.0",
+        "blob_sha": "0e6ab905e0b69d4defff938965f3accf03f597b2"
+      },
+      "access": "Complete manifest retrieved at pinned commit; source version only, npm release not verified",
+      "claims": [
+        "Source package manifest declares @bsv/sdk version 3.2.0 and Node.js >=22."
+      ],
+      "limits": "Not an installed dependency or verified npm distribution. Runtime package must be pinned and checked independently."
+    },
+    {
+      "id": "BSV-008",
+      "title": "SV Node Testnet guide",
+      "publisher": "BSV Blockchain",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "published": null,
+      "url": "https://docs.bsvblockchain.org/network-topology/nodes/sv-node/installation/sv-node/network-environments/testnet",
+      "access": "Official documentation read",
+      "claims": [
+        "BSV testnet is documented as a public unmanaged testing network; documented faucet options exist."
+      ],
+      "limits": "Documentation alone does not establish current faucet uptime or funded test UTXOs."
+    },
+    {
+      "id": "BSV-009",
+      "title": "Teranode Quickstart",
+      "publisher": "bsv-blockchain maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "published": null,
+      "url": "https://github.com/bsv-blockchain/teranode-quickstart",
+      "access": "Official README read",
+      "claims": [
+        "Quickstart offers testnet, regtest and teratestnet profiles as well as mainnet, with Docker Compose and network-specific resource requirements."
+      ],
+      "limits": "Not installed or run. Setup generates credentials and starts multiple services; its dependencies need separate review."
+    },
+    {
+      "id": "BSV-010",
+      "title": "WhatsOnChain testnet chain information",
+      "publisher": "WhatsOnChain",
+      "source_type": "primary_service_observation",
+      "retrieved": "2026-10-07",
+      "published": null,
+      "url": "https://api.whatsonchain.com/v1/bsv/test/chain/info",
+      "access": "Live credential-free HTTPS GET succeeded",
+      "claims": [
+        "At 08:20:33 UTC the provider reported chain=test and block height 1761928."
+      ],
+      "limits": "A point-in-time provider report, not an independent full-node/SPV proof, throughput test or broadcast receipt.",
+      "local_evidence": "../testing/demo-and-testnet-observation.json"
+    },
+    {
+      "id": "BSV-011",
+      "title": "Transaction Lifecycle",
+      "publisher": "BSV Teranode maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "published": null,
+      "url": "https://bsv-blockchain.github.io/teranode/topics/transactionLifecycle/",
+      "access": "Official documentation read",
+      "claims": [
+        "Transaction processing contains separate validation, propagation, block assembly, mining and blockchain-integration stages."
+      ],
+      "limits": "A pipeline description does not give this application a completion-time guarantee."
+    },
+    {
+      "id": "BSV-012",
+      "title": "Understanding Double Spends",
+      "publisher": "BSV Teranode maintainers",
+      "source_type": "primary",
+      "retrieved": "2026-10-07",
+      "published": null,
+      "url": "https://bsv-blockchain.github.io/teranode/topics/architecture/understandingDoubleSpends/",
+      "access": "Official conflict and reorganisation sections read",
+      "claims": [
+        "Teranode documents conflict state, descendant effects and multi-stage reorganisation handling."
+      ],
+      "limits": "Protocol state transitions do not define jurisdiction-specific legal finality or implement this application's reconciliation."
+    },
+    {
+      "id": "BSV-013",
+      "title": "How the BSV Association built a million-TPS blockchain node using AWS",
+      "publisher": "Amazon Web Services; Jordan Kramsky",
+      "source_type": "primary_infrastructure_provider_report",
+      "retrieved": "2026-10-07",
+      "published": "2026-03-31",
+      "url": "https://aws.amazon.com/blogs/web3/how-the-bsv-association-built-a-million-tps-blockchain-node-using-aws/",
+      "access": "Complete article read",
+      "claims": [
+        "AWS reports six distributed competing nodes sustaining one million transactions per second for a two-week benchmark with zero transaction loss."
+      ],
+      "limits": "The article describes a test implementation and not an end-to-end CBDC, policy workload, legal-finality SLA or benchmark reproduced by this project."
+    }
+  ]
+}
